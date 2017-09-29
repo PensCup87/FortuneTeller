@@ -10,6 +10,7 @@ namespace FortuneTellerProject
     {
         static void Main(string[] args)
         {
+
             //Cold Open
             Console.WriteLine("Greetings from The All Knowing.\n\nYou want some insight and I'll need some details.\n***Disclaimer***\nIf unsatisfied upon completion, customer service will instruct you to try again and lie.");
 
@@ -22,7 +23,7 @@ namespace FortuneTellerProject
 
             Console.WriteLine("\nPlease enter your age:");
             int userAge = int.Parse(Console.ReadLine());
-
+           
             Console.WriteLine("\nPlease enter the number representing your birth month:");
             int birthMonth = int.Parse(Console.ReadLine());
 
@@ -32,6 +33,51 @@ namespace FortuneTellerProject
             Console.WriteLine("\nPlease enter the number of siblings you have:");
             int userSiblings = int.Parse(Console.ReadLine());
 
+
+            //Part 2 - Life Stew Begins to Brew
+
+            //Variables
+            int RetirementAge;
+            string vacationHome;
+            string colorHelp;
+            int birthdayMonth;
+
+            //Age Even or Odd           
+            if (userAge % 2 != 0)
+            {
+                // Console.WriteLine("Since your age is an odd number, you will retire in 99 years.\nSorry about your luck!");
+                 RetirementAge = 99;
+            }
+            else
+            {
+                //Console.WriteLine("You have a bit of luck!  Retirement in 2 years.");
+                    RetirementAge = 4;
+            }
+
+
+            //Determining Vacation Home
+            if (userSiblings == 0)
+            {
+                vacationHome = "Taha'a French Polynesia";
+            }
+            else if(userSiblings == 1)
+            {
+                vacationHome = "The Cook Islands";
+            }
+            else if (userSiblings == 2)
+            {
+                vacationHome = "Napa Valley";
+            }
+            else if (userSiblings == 3)
+            {
+                vacationHome = "Negan's Compound";
+            }
+            else
+            {
+                vacationHome = "You'll be livning in a van, down by the river";
+            }
+            
+            
 
 
 
