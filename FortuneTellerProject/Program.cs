@@ -16,10 +16,10 @@ namespace FortuneTellerProject
 
             //Gather Personal Details
             Console.WriteLine("\n\nRather than referring to you as Baba Booey, Please enter your First Name:");
-            string userFirst = Console.ReadLine().Trim().ToLower();
+            string userFirst = Console.ReadLine().Trim();
 
             Console.WriteLine("\nPlease enter your Last Name:");
-            string userLast = Console.ReadLine().Trim().ToLower();
+            string userLast = Console.ReadLine().Trim();
 
             Console.WriteLine("\nPlease enter your age:");
             int userAge = int.Parse(Console.ReadLine());
@@ -37,22 +37,22 @@ namespace FortuneTellerProject
             //Part 2 - Life Stew Begins to Brew
 
             //Variables
-            int RetirementAge;
+            int retirementAge;
             string vacationHome;
-            int birthdayMonth;
             string bankAccount;
-            string decidedTransportation;
+            //string dreamMachine;
+            string dreamMachine;
 
             //Age Even or Odd           
             if (userAge % 2 != 0)
             {
                 // Console.WriteLine("Since your age is an odd number, you will retire in 99 years.\nSorry about your luck!");
-                 RetirementAge = 99;
+                 retirementAge = 19;
             }
             else
             {
                 //Console.WriteLine("You have a bit of luck!  Retirement in 2 years.");
-                    RetirementAge = 4;
+                    retirementAge = 4;
             }
 
 
@@ -80,44 +80,49 @@ namespace FortuneTellerProject
 
             //Color Selection
 
-            if (favoriteColor == "Help!")
+            if (favoriteColor == "Help")
             {
                 Console.WriteLine("Choose between Red, Orange, Yellow, Green, Blue, Indigo, or Violet");
                 favoriteColor = Console.ReadLine().Trim().ToLower();
             }
+
             if (favoriteColor == "red")
             {
-                decidedTransportation = "Iron Man Suit";
+                dreamMachine = "Iron Man Suit";
             }
             else if (favoriteColor == "orange")
             {
-                decidedTransportation = "Batman's Toumbler";
+                dreamMachine = "Batman's Toumbler";
             }
             else if (favoriteColor == "yellow")
             {
-                decidedTransportation = "Matt Foley's Van with a water view";
+                dreamMachine = "Matt Foley's Van with a water view";
             }
             else if (favoriteColor == "green")
             {
-                decidedTransportation = "Jesse James Chopper";
+                dreamMachine = "Jesse James Chopper";
             }
             else if (favoriteColor == "blue")
             {
-                decidedTransportation = "Doc Brown's DeLorean";
+                dreamMachine = "Doc Brown's DeLorean";
             }
             else if (favoriteColor == "indigo")
             {
-                decidedTransportation = "You have to train a wild elephant to ride, good luck";
+                dreamMachine = "You have to train a wild elephant to ride, good luck";
             }
             else if (favoriteColor == "violet")
             {
-                decidedTransportation = "The Wicked Witch's Broom";
+                dreamMachine = "The Wicked Witch's Broom";
             }
-            else
+           else
             {
-                Console.WriteLine("Choose between Red, Orange, Yellow, Green, Blue, Indigo, or Violet");
-                favoriteColor = Console.ReadLine().Trim().ToLower();
+              Console.WriteLine("Choose between Red, Orange, Yellow, Green, Blue, Indigo, or Violet");
+              favoriteColor = Console.ReadLine().Trim().ToLower();
             }
+
+            //
+            //
+            //
 
             if (birthMonth >= 1 && birthMonth <= 4)
             {
@@ -135,6 +140,11 @@ namespace FortuneTellerProject
             {
                 bankAccount = "$0.00, Zero Point Zero";
             }
+
+            //Part 3
+
+            Console.WriteLine("Your Fortune Awaits: ");
+            Console.WriteLine(userFirst + " " + userLast + " will retire in " + retirementAge + " with " + bankAccount + " in the bank, a vacation home in " + vacationHome + " and a " + ".");
 
             
 
