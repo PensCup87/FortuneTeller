@@ -40,6 +40,7 @@ namespace FortuneTellerProject
             int RetirementAge;
             string vacationHome;
             int birthdayMonth;
+            string bankAccount;
             string decidedTransportation;
 
             //Age Even or Odd           
@@ -81,7 +82,7 @@ namespace FortuneTellerProject
 
             if (favoriteColor == "Help!")
             {
-                Console.WriteLine("Choose between Red, Orange, Yellow, Green, Blue, Indiglo, or Violet");
+                Console.WriteLine("Choose between Red, Orange, Yellow, Green, Blue, Indigo, or Violet");
                 favoriteColor = Console.ReadLine().Trim().ToLower();
             }
             if (favoriteColor == "red")
@@ -104,7 +105,7 @@ namespace FortuneTellerProject
             {
                 decidedTransportation = "Doc Brown's DeLorean";
             }
-            else if (favoriteColor == "ivory")
+            else if (favoriteColor == "indigo")
             {
                 decidedTransportation = "You have to train a wild elephant to ride, good luck";
             }
@@ -114,11 +115,27 @@ namespace FortuneTellerProject
             }
             else
             {
-                Console.WriteLine("Choose between Red, Orange, Yellow, Green, Blue, Indiglo, or Violet");
+                Console.WriteLine("Choose between Red, Orange, Yellow, Green, Blue, Indigo, or Violet");
                 favoriteColor = Console.ReadLine().Trim().ToLower();
             }
 
-            
+            if (birthMonth >= 1 && birthMonth <= 4)
+            {
+                bankAccount = "$2,000,000";
+            }
+            else if (birthMonth >= 5 && birthMonth <= 8)
+            {
+                bankAccount = "1 Billion Dollars";
+            }
+            else if (birthMonth >= 9 && birthMonth <= 12)
+            {
+                bankAccount = "Do not pass and do not collect $200";
+            }
+            else
+            {
+                bankAccount = "$0.00, Zero Point Zero";
+            }
+
             
 
 
