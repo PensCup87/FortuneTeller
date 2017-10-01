@@ -23,7 +23,7 @@ namespace FortuneTellerProject
 
             Console.WriteLine("\nPlease enter your age:");
             int userAge = int.Parse(Console.ReadLine());
-           
+
             Console.WriteLine("\nPlease enter the number representing your birth month:");
             int birthMonth = int.Parse(Console.ReadLine());
 
@@ -33,7 +33,7 @@ namespace FortuneTellerProject
             Console.WriteLine("\nWhat ROYGBIV is your favorite:\nIf you do not know ROYGBIV, enter \"Help\"");
             string favoriteColor = Console.ReadLine().ToLower().Trim();
 
-            
+
 
 
             //Part 2 - Life Stew Begins to Brew
@@ -49,12 +49,12 @@ namespace FortuneTellerProject
             if (userAge % 2 != 0)
             {
                 // Console.WriteLine("Since your age is an odd number, you will retire in 99 years.\nSorry about your luck!");
-                 retirementAge = 19;
+                retirementAge = 19;
             }
             else
             {
                 //Console.WriteLine("You have a bit of luck!  Retirement in 2 years.");
-                    retirementAge = 4;
+                retirementAge = 4;
             }
 
 
@@ -63,7 +63,7 @@ namespace FortuneTellerProject
             {
                 vacationHome = "Taha'a French Polynesia";
             }
-            else if(userSiblings == 1)
+            else if (userSiblings == 1)
             {
                 vacationHome = "The Cook Islands";
             }
@@ -116,11 +116,11 @@ namespace FortuneTellerProject
             {
                 dreamMachine = "The Wicked Witch's Broom";
             }
-           //else if (favoriteColor == "help")
-           // {
-           //   Console.WriteLine("Choose between Red, Orange, Yellow, Green, Blue, Indigo, or Violet");
-           //   favoriteColor = Console.ReadLine().Trim().ToLower();
-           // }
+            //else if (favoriteColor == "help")
+            // {
+            //   Console.WriteLine("Choose between Red, Orange, Yellow, Green, Blue, Indigo, or Violet");
+            //   favoriteColor = Console.ReadLine().Trim().ToLower();
+            // }
 
             //
             //
@@ -148,7 +148,7 @@ namespace FortuneTellerProject
             Console.WriteLine("Your Fortune Awaits: ");
             Console.WriteLine(userFirst + " " + userLast + " will retire in " + retirementAge + " with " + bankAccount + " in the bank, a vacation home in " + vacationHome + " and a " + dreamMachine + ".");
 
-            
+
 
 
 
